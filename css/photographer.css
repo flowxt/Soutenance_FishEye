@@ -1,0 +1,363 @@
+@import url("./lightbox.css");
+
+#main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.no-scroll {
+    overflow: hidden;
+ }
+ 
+#contact_modal {
+    display: none;
+}
+
+.photograph-header {
+    background-color: #FAFAFA;
+    height: 300px;
+    margin: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.photograph-header img{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    object-fit:cover;
+}
+
+.photographer-info h1{
+    color: #D3573C;
+    font-weight: 200;
+    font-size: 50px;
+    margin: 0;
+}
+
+.photographer-info h2{
+    color: #901C1C;
+    font-weight: 200;
+    margin-bottom: 12px;
+}
+
+.photographer-info p{
+    font-size: 14px;
+    color: #605d5d;
+}
+
+.photograph-work{
+    margin: 30px 100px
+}
+
+.photograph-work #sortSelect, 
+#sortSelect option{
+    padding: 8px 16px;
+    border: none;
+    background-color: #901C1C;
+    color: #FAFAFA;
+    border-radius: 5px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1rem;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+  }
+
+.photograph-gallery{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 30px;
+    column-gap: 50px;
+
+}
+
+.gallery-item{
+   flex-basis: 28%;
+   margin-bottom: 30px;
+}
+
+
+
+
+.item img,
+.item video{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.likes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #901C1C;
+    font-size: 18px;
+}
+
+.likes h3{
+    margin: 0;
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+
+.heart-icon{
+    width: 20px;
+    height: 20px;
+    color: #901C1C;
+    cursor: pointer;
+}
+
+.item-rating{
+    display: flex;
+    align-items: center;
+}
+
+.photographer-rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-inline: 12px;
+    position: fixed;
+    bottom: 0;
+    right: 5%;
+    background-color: #DB8876;
+    width: 18%;
+    height: 3rem;
+    color:#312E2E;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    font-weight: bold;
+    height: 60px;
+}
+
+.rating{
+    display: flex;
+}
+.rating img{
+    margin-left: 4px;
+    font-size: 20px;
+    margin-top: 4px;
+}
+.photographer-rating p {
+    font-weight: bold;
+    font-size: 20px;
+}
+#contact_modal{
+    position: fixed;
+    padding: 1.5rem 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(196, 196, 196, 0.4);
+}
+.contact_button {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 11px;
+    width: 170px;
+    height: 70px;
+    border: none;
+    background-color: #901C1C;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact_button:hover {
+    background-color: #DB8876;
+    color: black;
+}
+
+.modal {
+    border-radius: 5px;
+    background-color: #DB8876;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    margin: auto;
+}
+
+.modal_header {
+    justify-content: space-between;
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    align-items:first baseline;
+}
+
+.cross{
+    cursor: pointer;
+}
+
+.header_title{
+    font-size: 55px;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+
+form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form label {
+    color: #312E2E;
+    font-size: 30px;
+   
+
+}
+label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: self-start;
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+form textarea {
+    height: 110px;
+}
+
+form input{
+    height: 55px;
+}
+
+.hidden {
+    height: 1px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: -10000px;
+    width: 1px;
+ }
+
+
+
+ @media screen and (max-width:768px){
+    .photograph-header {
+        margin: 0 50px;
+        position: relative;
+        height: 150px;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .photograph-header img{
+        height: 70px;
+        width: 70px;
+        position: absolute;
+        top: -2rem;
+        left: -2rem;
+    }
+    .photographer-info h1{
+        font-size: 25px;
+    }
+    .photographer-info h2{
+        font-size: 16px;
+    }
+    
+    .photographer-info p{
+        font-size: 10px;
+     
+    }
+    .contact_button {
+        font-size: 10px;
+        padding: 5px;
+        width: 80px;
+        height: 35px;
+    }
+    .photograph-work{
+        margin: 15px 50px
+    }
+    .photograph-gallery{
+        margin-top: 15px;
+        column-gap: 25px;
+        justify-content: space-between;
+
+    }
+    .gallery-item{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+     }
+
+     .likes{
+        font-size: 13px;
+    }
+
+    .heart-icon{
+        width: 15px;
+        height: 15px;
+    }
+
+    .photographer-rating{
+        padding-inline: 6px;
+        position: fixed;
+        right: 10%;
+        width: 30%;
+    }
+
+    .photographer-rating p {
+        font-size: 12px;
+    }
+    #contact_modal{
+        padding: 20% 0;
+    }
+
+    .modal {
+        width: 80%;
+        padding: 12px;
+    }
+    .header_title{
+        font-size: 30px;
+    }
+    form label {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .gallery-item{
+        flex-basis: 45%;
+        margin-bottom: 20px;
+     }
+     .modal {
+        width: 70%;
+    }
+    .header_title{
+        font-size: 40px;
+    }
+    form label {
+        font-size: 20px;
+    }
+    .photographer-rating{
+        width: 32%;
+    }
+}

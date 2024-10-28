@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fisheye - Les Photographes</title>
+  </head>
+  <body>
+    <header>
+      <a href="./index.html" aria-label="revenir à la page d'accueil">
+        <img src="assets/images/logo.png" class="logo" alt="logo de fisheye" />
+      </a>
+    </header>
+    <main id="main" aria-hidden="false">
+      <div class="photograph-header">
+        <button
+          class="contact_button"
+          id="contact_button"
+          aria-label="Contact Me"
+        >
+          Contactez-moi
+        </button>
+      </div>
+      <!-- test  --------------------------------------->
+      <!-- <nav>
+        <div class="sort-container">
+          <p class="tri">Trier par :</p>
+          <div class="dropdown">
+            <button id="sortButton" class="tri-option">
+              Popularité
+              <i
+                id="arrowIcon"
+                class="fas fa-chevron-down"
+                style="margin-left: 8px"
+              ></i>
+            </button>
+            <div id="sortOptions" class="dropdown-content">
+              <button class="sort-option" data-sort="popularity">
+                Popularité
+              </button>
+              <button class="sort-option" data-sort="date">Date</button>
+              <button class="sort-option" data-sort="title">Titre</button>
+            </div>
+          </div>
+        </div>
+      </nav> -->
+      <!-- Fin du test ---------------------------------->
+      <div class="photograph-work">
+        <label for="sortSelect">Trier par :</label>
+        <select id="sortSelect" class="styled-select">
+          <option value="popularity">Popularité</option>
+          <option value="date">Date</option>
+          <option value="title">Titre</option>
+        </select>
+        <div class="photograph-gallery" id="gallery"></div>
+      </div>
+      <div class="photographer-rating"></div>
+    </main>
+    <div
+      id="lightbox"
+      class="lightbox"
+      aria-label="image closeup view"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <button class="lightbox_close" aria-label="fermer la boite de dialogue">
+        &times;
+      </button>
+      <button class="lightbox_prev" aria-label="media précédent">
+        &#10094;
+      </button>
+      <button class="lightbox_next" aria-label="media suivant">&#10095;</button>
+      <div id="lightbox_container" aria-label="media actuel" role="list">
+        <div class="lightbox_media" role="presentation"></div>
+        <h3 class="lightbox_title" role="heading"></h3>
+      </div>
+    </div>
+    <div id="contact_modal" aria-hidden="true">
+      <div class="modal" role="dialog" aria-label="contact_form">
+        <div class="modal_header">
+          <img
+            src="assets/icons/close.svg"
+            alt="icone pour fermer la modale au click"
+            class="cross"
+            id="cross-close"
+          />
+        </div>
+        <form>
+          <div class="input-group" role="group">
+            <label for="prenom">Prénom</label>
+            <input
+              type="text"
+              id="prenom"
+              name="prenom"
+              aria-labelledby="prenom"
+              aria-describedby="prenom_help"
+            />
+            <span id="prenom_help" class="hidden">Entrez votre prénom</span>
+          </div>
+          <div class="input-group" role="group">
+            <label for="nom">Nom</label>
+            <input
+              type="text"
+              id="nom"
+              name="nom"
+              aria-labelledby="nom"
+              aria-describedby="nom_help"
+            />
+            <span id="nom_help" class="hidden">Entrez votre nom</span>
+          </div>
+          <div class="input-group" role="group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              aria-labelledby="email"
+              aria-describedby="email_help"
+              aria-required="true"
+            />
+            <span id="email_help" class="hidden">Entrez votre email</span>
+          </div>
+          <div class="input-group" role="group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              aria-labelledby="message"
+              aria-describedby="message_help"
+            ></textarea>
+            <span id="message_help" class="hidden">Entrez votre message</span>
+          </div>
+          <button
+            class="contact_button"
+            type="submit"
+            aria-label="Envoyer le formulaire"
+          >
+            Envoyer
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="./scripts/pages/photographer.js" type="module"></script>
+    <script src="./scripts/utils/lightbox.js" type="module"></script>
+    <script src="./scripts/utils/contactForm.js" type="module"></script>
+    <!-- Factories -->
+    <script src="./scripts/factories/mediasfactory.js" type="module"></script>
+  </body>
+</html>
