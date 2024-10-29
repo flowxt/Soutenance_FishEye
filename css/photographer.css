@@ -87,7 +87,104 @@
 
 /* CECI EST UN TEST  */
 
-
+/* .sort-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .tri {
+    font-weight: bold;  Rendre le texte gras 
+    font-size: 18px;  /* Ajustez la taille si nécessaire 
+    margin-right: 10px; /* Espace à droite du texte */
+  /* } */
+  
+  /* .dropdown {
+    position: relative;
+    display: inline-block;
+  } */
+  
+  /* .sort-option{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 11px;
+    width: 170px;
+    height: 70px;
+    border: none;
+    /* border-bottom: 1px solid white; */
+    /* background-color: #901C1C; */
+    /* border-bottom: 1px solid white;  Pas fini pour la bordure, je dois mettre un width de 90% */
+      /* z-index: 1000; Utilisez une valeur élevée */
+    /* cursor: pointer; */
+    /* margin-bottom: 0; Petit espace entre les boutons */
+   /* position: relative; */
+  /* }  */
+  
+  
+  
+  /* .sort-option::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%; /* Ajuste pour créer un effet de 90% de largeur */
+    /* width: 80%; /* La bordure occupera 90% de la largeur du bouton */
+    /* height: 1px; */
+    /* background-color: white; Couleur de la bordure */
+  /* } */
+  /* .sort-option:last-of-type::after { */
+    /* content: none; */
+  /* } */
+  /* .tri-option {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 11px;
+    width: 170px;
+    height: 70px;
+    border: none;
+    background-color: #901C1C;
+    cursor: pointer;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1000;
+  } */
+  
+  /* Bordure invisible par défaut */
+  /* .tri-option::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%; 
+    width: 80%; 
+    height: 1px;
+    background-color: white; 
+    opacity: 0; 
+    
+  } */
+  
+  /* Faire apparaître la bordure lorsqu'on clique sur le bouton */
+  /* .tri-option:focus::after,
+  .tri-option:active::after {
+    opacity: 1; 
+    transition: 0.3s ease; 
+  }
+   */
+  /* .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    
+  } */
+  
+  /* .dropdown-content .submit_button {
+    margin-top: 0; /* Petit espace entre les boutons */
+  /* } */ 
+  
+  /* .show {
+    display: block;
+  }  */
 
 /* FIN DU TEST */
 
@@ -364,3 +461,106 @@ form input{
         width: 32%;
     }
 }
+
+
+
+/* CECI EST UN TEST POUR AVOIR BOUTON PLUTOT QUE MENU SELECT */
+
+/* .sort-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .tri {
+    font-weight: bold;  Rendre le texte gras 
+    font-size: 18px;  /* Ajustez la taille si nécessaire 
+    margin-right: 10px; /* Espace à droite du texte */
+  /* } */
+  
+  /* .dropdown {
+    position: relative;
+    display: inline-block;
+  } */
+  
+  /* .sort-option{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 11px;
+    width: 170px;
+    height: 70px;
+    border: none;
+    /* border-bottom: 1px solid white; */
+    /* background-color: #901C1C; */
+    /* border-bottom: 1px solid white;  Pas fini pour la bordure, je dois mettre un width de 90% */
+      /* z-index: 1000; Utilisez une valeur élevée */
+    /* cursor: pointer; */
+    /* margin-bottom: 0; Petit espace entre les boutons */
+   /* position: relative; */
+  /* }  */
+  
+  
+  
+  /* .sort-option::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%; /* Ajuste pour créer un effet de 90% de largeur */
+    /* width: 80%; /* La bordure occupera 90% de la largeur du bouton */
+    /* height: 1px; */
+    /* background-color: white; Couleur de la bordure */
+  /* } */
+  /* .sort-option:last-of-type::after { */
+    /* content: none; */
+  /* } */
+  /* .tri-option {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 11px;
+    width: 170px;
+    height: 70px;
+    border: none;
+    background-color: #901C1C;
+    cursor: pointer;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1000;
+  } */
+  
+  /* Bordure invisible par défaut */
+  /* .tri-option::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%; 
+    width: 80%; 
+    height: 1px;
+    background-color: white; 
+    opacity: 0; 
+    
+  } */
+  
+  /* Faire apparaître la bordure lorsqu'on clique sur le bouton */
+  /* .tri-option:focus::after,
+  .tri-option:active::after {
+    opacity: 1; 
+    transition: 0.3s ease; 
+  }
+   */
+  /* .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    
+  } */
+  
+  /* .dropdown-content .submit_button {
+    margin-top: 0; /* Petit espace entre les boutons */
+  /* } */ 
+  
+  /* .show {
+    display: block;
+  }  */
