@@ -1,3 +1,5 @@
+// TEST AU DESSUS
+
 //fonctions de tri des médias (popularité, et titre)
 export function sortByPopularity(medias) {
   return medias.sort((a, b) => b.likes - a.likes);

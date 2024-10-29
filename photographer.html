@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap"
       rel="stylesheet"
     />
@@ -27,31 +34,29 @@
           Contactez-moi
         </button>
       </div>
-      <!-- test  --------------------------------------->
-      <!-- <nav>
-        <div class="sort-container">
-          <p class="tri">Trier par :</p>
-          <div class="dropdown">
-            <button id="sortButton" class="tri-option">
-              Popularité
-              <i
-                id="arrowIcon"
-                class="fas fa-chevron-down"
-                style="margin-left: 8px"
-              ></i>
-            </button>
-            <div id="sortOptions" class="dropdown-content">
-              <button class="sort-option" data-sort="popularity">
-                Popularité
+
+      <div class="photograph-work">
+        <!-- test  --------------------------------------->
+        <!-- <nav>
+          <div class="sort-container">
+            <p class="tri">Trier par :</p>
+            <div class="dropdown">
+              <button id="sortButton" class="tri-option">
+                <span id="sortText">Popularité</span>
+                
+                <i id="arrowIcon" class="fas fa-chevron-down"></i>
               </button>
-              <button class="sort-option" data-sort="date">Date</button>
-              <button class="sort-option" data-sort="title">Titre</button>
+              <div id="sortOptions" class="dropdown-content">
+                <button class="sort-option" data-sort="popularity">
+                  Popularité
+                </button>
+                <button class="sort-option" data-sort="date">Date</button>
+                <button class="sort-option" data-sort="title">Titre</button>
+              </div>
             </div>
           </div>
-        </div>
-      </nav> -->
-      <!-- Fin du test ---------------------------------->
-      <div class="photograph-work">
+        </nav> -->
+        <!-- Fin du test ---------------------------------->
         <label for="sortSelect">Trier par :</label>
         <select id="sortSelect" class="styled-select">
           <option value="popularity">Popularité</option>
