@@ -60,7 +60,12 @@
     color: #FAFAFA;
     border-radius: 5px;
     font-family: "DM Sans", sans-serif;
-    font-size: 1rem;
+    font-size: 1.3rem;
+}
+
+.styled-select {
+  height: 70px;
+  width: 170px;
 }
 
 .error-message {

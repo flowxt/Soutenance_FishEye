@@ -12,7 +12,6 @@ class Media {
     this._date = data.date; // Date de création ou de publication du média.
     this._price = data.price; // Prix associé au média (par exemple pour une utilisation ou une licence).
   }
-
   // Getter pour obtenir l'ID du média.
   // Les getters permettent d'accéder aux propriétés sans exposer les variables privées directement.
   get id() {
