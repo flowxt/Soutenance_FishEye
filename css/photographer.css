@@ -61,6 +61,7 @@
     border-radius: 5px;
     font-family: "DM Sans", sans-serif;
     font-size: 1.3rem;
+    cursor: pointer;
 }
 
 .styled-select {
@@ -68,6 +69,12 @@
   width: 170px;
 }
 
+
+.styled-select option {
+    background-color: #901C1C; /* Arrière-plan des options */
+    color: white; /* Couleur du texte des options */
+    font-weight: bold;
+  }
 .error-message {
     color: red;
     font-size: 0.9rem;
