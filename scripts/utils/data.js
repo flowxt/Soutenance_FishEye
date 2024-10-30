@@ -17,7 +17,7 @@ export async function getPhotographers() {
   }
 }
 
-//récup des tous les médias
+//récup de tous les médias
 export async function getMedias() {
   try {
     const fetchMedias = await fetch("data/photographers.json");
